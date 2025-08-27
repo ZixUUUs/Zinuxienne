@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a,
+a:visited {
+  outline: none;
+}
+li {
+  list-style: none;
+}
+section {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px;
+}
+.contain img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.active {
+  visibility: visible;
+}
+/*----------------------------------------------Text--------------------------------------------*/
+
+/*
+.sora-<uniquifier> {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
