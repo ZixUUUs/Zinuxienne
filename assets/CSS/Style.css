@@ -33,6 +33,12 @@ section {
 }
 .active {
   visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.open {
+  transform: rotateY(180deg);
 }
 /*----------------------------------------------Text--------------------------------------------*/
 

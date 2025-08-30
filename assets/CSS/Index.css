@@ -8,7 +8,22 @@ header nav ul li a {
   letter-spacing: 0%;
   color: #ff5e3a;
 }
-
+.text-container h1 {
+  font-family: "Sora";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.text-container p {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
 /*----------------------------------------------Text--------------------------------------------*/
 .res-btn {
   display: none;
@@ -18,6 +33,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 80px;
+  gap: 40px;
 }
 .logo-container {
   max-width: 150px;
@@ -39,12 +55,45 @@ header nav ul li {
   padding: 10px;
   border: 1px solid #dadada;
 }
+/* ---------------------------------------HeroSec------------------------------------------- */
+.hero-sec-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+}
+.text-container {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 400px;
+  border: 1px solid #dadada;
+  border-radius: 16px;
+  padding: 20px;
+}
+.Hero-container {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
 
+.hero-container-img-cartoon {
+  position: absolute;
+  top: 34%;
+  right: -3%;
+  transform: rotate(-90deg);
+  max-width: 140px;
+  height: 90px;
+}
 /*----------------------------------------------Res--------------------------------------------*/
 @media screen and (max-width: 990px) {
   header {
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px 20px;
   }
   .res-btn {
     display: flex;
@@ -53,7 +102,9 @@ header nav ul li {
     background: none;
     border: 1px solid #ff5e3a;
     border-radius: 12px;
-    padding: 3px;
+    padding: 4px;
+    transition: all 0.3s ease-out;
+    transform: rotateY(0);
   }
   .close-menu {
     display: none;
@@ -64,13 +115,17 @@ header nav ul li {
     align-items: center;
     justify-content: flex-start;
     padding: 20px;
-    top: 21%;
+    top: 120px;
     left: 0;
     width: 100%;
     border-bottom: 1px solid #ff5e3a;
     border-top: 1px solid #ff5e3a;
     height: max-content;
     visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
     z-index: 999;
   }
   header nav ul {
@@ -84,6 +139,34 @@ header nav ul li {
   }
   .logo-container {
     transform: translateX(-40vw);
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo-container {
+    max-width: 120px;
+    min-height: 100px;
+    transform: translateX(-40dvw);
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo-container {
+    transform: translateX(-35dvw);
+  }
+}
+@media screen and (max-width: 425px) {
+  /* ------------------text----------------- */
+  header nav ul li a {
+    font-family: "Inter";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ff5e3a;
+  }
+  /* ------------------text----------------- */
+  .logo-container {
+    transform: translateX(-30dvw);
   }
 }
 /*----------------------------------------------Res--------------------------------------------*/
